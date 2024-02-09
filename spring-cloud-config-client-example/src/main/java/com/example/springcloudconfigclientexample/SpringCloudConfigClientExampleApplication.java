@@ -2,6 +2,7 @@ package com.example.springcloudconfigclientexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringBootApplication
 @RestController
+@RefreshScope
 @RequestMapping("/show")
 public class SpringCloudConfigClientExampleApplication {
 
